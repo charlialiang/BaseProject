@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.kongqw.myapplication.MainActivity">
+    <item
+        android:id="@+id/search_button"
+        android:icon="@drawable/ic_chevron_left_white_36dp"
+        android:orderInCategory="100"
+        android:title="搜索"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/scan_button"
+        android:icon="@drawable/ic_chevron_left_white_36dp"
+        android:orderInCategory="100"
+        android:title="扫描"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/setting_button"
+        android:icon="@drawable/ic_chevron_left_white_36dp"
+        android:orderInCategory="100"
+        android:title="设置"
+        app:showAsAction="never" />
+</menu>
