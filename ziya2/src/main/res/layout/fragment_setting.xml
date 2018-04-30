@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whiteBg">
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/user" />
+
+    <com.zzhserver.ui.ItemView
+        android:id="@+id/item_name"
+        android:onClick="onClick"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        app:iconVisibility="gone"
+
+        app:text1="昵称"
+        app:text4="11111" />
+
+    <com.zzhserver.ui.ItemView
+        android:id="@+id/item_number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:iconVisibility="gone"
+        app:text1="号码"
+        app:text4="11111" />
+
+    <com.zzhserver.ui.ItemView
+        android:id="@+id/item_qrcode"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:iconVisibility="gone"
+        app:text1="我的二维码" />
+
+    <com.zzhserver.ui.ItemView
+        android:id="@+id/item_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:iconVisibility="gone"
+        app:text1="修改密码" />
+
+
+    <com.zzhserver.ui.ItemView
+        android:id="@+id/item_about"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:iconVisibility="gone"
+        app:text1="关于" />
+
+    <com.zzhserver.ui.ItemView
+        android:id="@+id/item_logout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:iconVisibility="gone"
+        app:text1="退出" />
+
+</LinearLayout>

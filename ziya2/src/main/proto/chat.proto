@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+option java_multiple_files = true;//multiple java
+option java_package = "com.zzhserver.protobuf";//package
+option java_outer_classname = "ChatProto";
+option objc_class_prefix = "HLW";
+
+package helloworld;
+
+service Greeter {
+    rpc AccountOption (AccountReq) returns (AccountReply) {}
+    rpc SendStream(stream Message) returns (stream Message){}
+}
+
+message AccountReq {
+    int32 type=1;
+    string username = 2;
+    string password = 3;
+    string extra = 4;
+}
+
+message AccountReply {
+    int32 code = 1;
+    int32 uid = 2;
+}
+
+message Message {
+    int32 typ = 1;//type
+    int32 sid = 2;//source id
+    int32 tid = 3;//target id
+    int32 mTyp = 4;//message type
+    string msg = 5;//message
+    int64 time = 6;//time ms
+    string x = 7;//undefined
+}
+

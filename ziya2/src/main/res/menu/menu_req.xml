@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".main.user.req.UserReqActivity">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@mipmap/ic_person_add_white"
+        android:orderInCategory="80"
+        android:title="添加"
+        app:showAsAction="ifRoom" />
+</menu>

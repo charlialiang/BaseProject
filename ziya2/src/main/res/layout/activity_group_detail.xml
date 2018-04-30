@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:navigationIcon="@mipmap/ic_back_white"
+        app:title="群组"
+        app:titleTextColor="@color/white" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="300dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.zzhserver.ui.ItemView
+                android:id="@+id/item_head"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:iconVisibility="gone"
+                app:text1="群组头像" />
+
+            <com.zzhserver.ui.ItemView
+                android:id="@+id/item_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:iconVisibility="gone"
+                app:text1="群组名称"
+                app:text4="11111" />
+
+            <com.zzhserver.ui.ItemView
+                android:id="@+id/item_gid"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:iconVisibility="gone"
+                app:text1="群组ID"
+                app:text4="11111" />
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="160dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_login_selector"
+                android:onClick="onClick"
+                android:text="解散群组" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

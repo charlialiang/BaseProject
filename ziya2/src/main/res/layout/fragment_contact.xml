@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteBg"
+    tools:context=".main.user.ContactFragment">
+
+    <com.zzhserver.ui.ItemView
+        android:id="@+id/item_friend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:iconRes="@mipmap/user_req"
+        app:text1="新的朋友" />
+
+    <com.zzhserver.ui.ItemView
+        android:id="@+id/item_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_friend"
+        app:iconRes="@mipmap/group"
+        app:text1="群组" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_contact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/item_group" />
+
+</RelativeLayout>

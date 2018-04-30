@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <corners android:radius="999dp" />
+            <gradient
+                android:angle="90"
+                android:endColor="@color/grayd"
+                android:startColor="@color/gray9" />
+            <stroke android:width="0px" android:color="@color/transparent"/>
+        </shape>
+    </item>
+    <item android:bottom="0.5dp" android:right="0.5dp">
+        <shape >
+            <corners android:radius="999dp" />
+            <gradient
+                android:angle="90"
+                android:endColor="@color/white"
+                android:startColor="@color/grayd" />
+            <stroke android:width="0.5dp" android:color="@color/transparent"/>
+        </shape>
+    </item>
+
+</layer-list>
